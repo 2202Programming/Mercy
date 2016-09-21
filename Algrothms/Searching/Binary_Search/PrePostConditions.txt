@@ -1,2 +1,0 @@
-Preconditions: Function is passed an Array, Array[] of n elements and an int, num whose value is the length of the array
-Postconditions: A sorted array of the same length is returned. Array is sorted in average nLogn Time
