@@ -11,8 +11,8 @@ import java.util.Arrays;
  *         (262) 408-0490
  *         thomas.lazar@marquette.edu
  */
-public class IOHelper
-{
+public class IOHelper {
+
     private final File inputFile;
     private final File outputFile;
 
@@ -20,8 +20,7 @@ public class IOHelper
      * Constructs a new helper with the input and output linked to the same file
      * @param nFile file to write and read
      */
-    public IOHelper(String nFile)
-    {
+    public IOHelper(String nFile) {
         inputFile = new File(nFile);
         outputFile = inputFile;
     }
@@ -31,8 +30,7 @@ public class IOHelper
      * @param inputPath file to read input from
      * @param outputPath file to write output to
      */
-    public IOHelper(String inputPath, String outputPath)
-    {
+    public IOHelper(String inputPath, String outputPath) {
         inputFile = new File(inputPath);
         outputFile = new File(outputPath);
     }
@@ -41,18 +39,15 @@ public class IOHelper
      * Reads all text from the input file.
      * @return string representation of the file's contents
      */
-    public String readAll()
-    {
+    public String readAll() {
         StringBuilder sb = new StringBuilder();
-        try
-        {
+        try {
             Reader r = new InputStreamReader(new FileInputStream(inputFile));
             int c;
             while ((c = r.read()) != -1)
                 sb.append((char) c);
         }
-        catch (IOException e)
-        {
+        catch (IOException e) {
             e.printStackTrace();
         }
         return sb.toString();
@@ -64,8 +59,7 @@ public class IOHelper
      * @return Array of N strings from a file where each string is line from the
      * input file.
      */
-    public String[] readAllAsArray()
-    {
+    public String[] readAllAsArray() {
       return this.readAll().Split("\n");
     }
 
@@ -73,16 +67,13 @@ public class IOHelper
      * writes the input to the file, this operation is destructive to the previous contents of the file.
      * @param out string to write
      */
-    public void writeAll(String out)
-    {
-        try
-        {
+    public void writeAll(String out) {
+        try {
             PrintWriter writer = new PrintWriter(outputFile);
             writer.print(out);
             writer.close();
         }
-        catch (FileNotFoundException e)
-        {
+        catch (FileNotFoundException e) {
             System.out.println("File " + outputFile.getName() + " not found\nStackTrance:\n" + Arrays.toString(e.getStackTrace()));
         }
     }
