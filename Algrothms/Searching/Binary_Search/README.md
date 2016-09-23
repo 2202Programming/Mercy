@@ -1,9 +1,9 @@
 # Binary Search
 
-Language: Scratch
-Author: Aaron N.
-Date: 9-20-2016
-Version: v0.1.0
+**Language:** Scratch
+**Author:** Aaron N.
+**Date:** 9-20-2016
+**Version:** v0.1.0
 
 
 ## Class
