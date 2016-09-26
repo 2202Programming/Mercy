@@ -6,7 +6,7 @@ import java.util.Arrays;
 /**
  * Created by lazar on 9/8/2016.
  * Basic helper for simple File IO operations.
- *
+ * v1.0.1
  * @author Tom Lazar
  *         (262) 408-0490
  *         thomas.lazar@marquette.edu
