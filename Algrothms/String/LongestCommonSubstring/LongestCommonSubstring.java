@@ -14,7 +14,7 @@ public class LongestCommonSubstring {
     private int MisMatchPenalty;
     private int InsertionPenalty;
     private int DeletionPenalty;
-    private boolean GlobalAllignment;
+    private boolean GlobalAlignment;
 
     //Constructors
 
@@ -32,7 +32,7 @@ public class LongestCommonSubstring {
         MisMatchPenalty = -1;
         InsertionPenalty = -1;
         DeletionPenalty = -1;
-        GlobalAllignment = true;
+        GlobalAlignment = true;
     }
 
     /**
@@ -47,16 +47,16 @@ public class LongestCommonSubstring {
      */
     public LongestCommonSubstring(int matchBonus, int misMatchPenalty,
                                   int insertionPenalty, int deletionPenalty,
-                                  boolean globalAllignment) {
+                                  boolean globalAlignment) {
         MatchBonus = matchBonus;
         MisMatchPenalty = misMatchPenalty;
         InsertionPenalty = insertionPenalty;
         DeletionPenalty = deletionPenalty;
-        GlobalAllignment = globalAllignment;
+        GlobalAlignment = globalAlignment;
     }
 
     /**
-     * Runs the program all interactive like.
+     * Runs the program in an interactive terminal.
      */
     public static void InteractiveRunner() {
         char cont; //user input for weather or not the program will continue through multiple runs.
@@ -113,7 +113,7 @@ public class LongestCommonSubstring {
                 else {                           // INSERTION/DELETION
                     int score = Math.max(table[i + 1][j] - InsertionPenalty
                             , table[i][j + 1] - DeletionPenalty);
-                    if (GlobalAllignment) {
+                    if (GlobalAlignment) {
                         score = Math.max(score, 0);
                     }
                     table[i + 1][j + 1] = score;
