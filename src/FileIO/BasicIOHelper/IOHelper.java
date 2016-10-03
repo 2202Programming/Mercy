@@ -1,4 +1,4 @@
-package com.tomlazar.util;
+package com.fileio;
 
 import java.io.*;
 import java.util.Arrays;
