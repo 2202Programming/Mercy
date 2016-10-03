@@ -1,4 +1,4 @@
-package com.tomlazar.util;
+package com.fileio;
 
 import java.io.*;
 import java.util.Arrays;
@@ -60,7 +60,7 @@ public class IOHelper {
      * input file.
      */
     public String[] readAllAsArray() {
-      return this.readAll().Split("\n");
+      return this.readAll().split("\n");
     }
 
     /**
