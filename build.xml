@@ -1,0 +1,16 @@
+<project default="compile">
+	<target name="compile">
+		<mkdir dir="bin"/>
+		<javac srcdir="src" destdir="bin"/>
+	</target>
+	<target name="clean">
+		<echo>====  CLEAN ====</echo>
+		<delete dir="bin" />
+		<echo>====   FIN  ====</echo> 
+	</target>
+	<target name="rebuild-all" depends="clean">
+		<echo>====  BUILD ====</echo>
+		<mkdir dir="bin"/>
+		<javac srcdir="src" destdir="bin"/>
+	</target>
+</project>
