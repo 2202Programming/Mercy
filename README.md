@@ -1,4 +1,4 @@
-# Mercy
+# Mercy  [![Build Status](https://travis-ci.org/2202Programming/Mercy.svg?branch=master)](https://travis-ci.org/2202Programming/Mercy)
 Collection of Helper functions and other methods to assist in doing almost anything in any language.
 
 In the end, this project will be full of useful little helper functions, each usable by themselves to solve a specific goal or function. Some example topics that could be done in this project would be empty array initializers, event loggers, string formatters, fileIO helpers, web API assessors, frequency generators, and whole bunch of other topics. There is no limit to what you can add to this repo as long as it solves a general problem, not one specific task.
