@@ -1,4 +1,4 @@
-package com.algorithms.string;
+package com.algrothms.string;
 import java.util.Scanner;
 
 /**
