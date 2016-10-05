@@ -1,4 +1,4 @@
-package com.algrothms.string;
+package Algrothms.String.LongestCommonSubstring;
 import java.util.Scanner;
 
 /**
