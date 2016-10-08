@@ -1,4 +1,4 @@
-package FileIO.BasicIOHelper;
+package fileio.fileloader;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -16,7 +16,7 @@ import java.io.File;
 public class FileLoader {
 
 	/**
-	 * Writes the String contents to the file with the name filename. Note that
+	 * Writes the string contents to the file with the name filename. Note that
 	 * the file will be cleared before writing.
 	 * 
 	 * @param filename

@@ -1,4 +1,4 @@
-package Math;
+package math.point;
 
 /**
  * A general-purpose double-based [<i>non-immutable</i>] 2D Point class
@@ -6,7 +6,7 @@ package Math;
  * <br>
  * *many of these methods are easier to use and are not included in either the
  * Point class built into Java or the Point2D class
- * 
+ *
  * @author David Harmeyer
  *
  */
@@ -26,7 +26,7 @@ public class Point {
 
 	/**
 	 * Constructs a new point with the given coordinates
-	 * 
+	 *
 	 * @param x
 	 *            The x-coordinate of the constructed Point
 	 * @param y
@@ -39,7 +39,7 @@ public class Point {
 
 	/**
 	 * Returns the Euclidean distance between this point and <i>other</i>
-	 * 
+	 *
 	 * @param other
 	 *            The point to measure the distance between
 	 * @return The distance between this and <i>other</i>
@@ -50,7 +50,7 @@ public class Point {
 
 	/**
 	 * Gets the midpoint of this point and <i>other</i>
-	 * 
+	 *
 	 * @param other
 	 *            The other point
 	 * @return The midpoint of this and <i>other</i>
@@ -61,7 +61,7 @@ public class Point {
 
 	/**
 	 * Gets the direction from this point to <i>other</i> in radians
-	 * 
+	 *
 	 * @param other
 	 *            The other point to get the direction to
 	 * @return The direction from this to <i>other</i> in radians
@@ -77,7 +77,7 @@ public class Point {
 	/**
 	 * Calculates the magnitude of a 2D vector with components xi+yj, or <x, y>.
 	 * This is always equal to the distance between this point and the origin
-	 * 
+	 *
 	 * @return The magnitude of vector <x, y>
 	 */
 	public double magnitude() {
@@ -87,7 +87,7 @@ public class Point {
 	/**
 	 * Calculates the direction of the 2D vector with components xi+yj or <x, y>
 	 * in radians.
-	 * 
+	 *
 	 * @return The direction of <x, y> in radians.
 	 */
 	public double direction() {

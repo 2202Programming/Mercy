@@ -1,4 +1,4 @@
-package FileIO.BasicIOHelper;
+package fileio.iohelper;
 
 import java.io.*;
 import java.util.Arrays;
