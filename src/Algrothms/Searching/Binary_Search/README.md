@@ -1,12 +1,12 @@
 # Binary Search
 
-**Language:** Scratch   
+**Language:** C   
 **Author:** Aaron N.    
-**Date:** 9-20-2016   
-**Version:** v0.1.0   
+**Date:** 10-25-2016   
+**Version:** v0.1.5   
 
 
 ## Class
 
-Pre-Conditions: Function is passed an Array, Array[] of n elements and an int, num whose value is the length of the array
-Post-Conditions: A sorted array of the same length is returned. Array is sorted in average nLogn Time
+Pre-Conditions: Function is passed an sorted Array[] of n elements, a query, and an int whose value is the length of the array
+Post-Conditions: A pointer to the element is returned. If the element is not contained, a null pointer is returned
