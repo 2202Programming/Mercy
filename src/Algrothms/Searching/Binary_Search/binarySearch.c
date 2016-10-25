@@ -1,6 +1,8 @@
-int * main(int* a, int q, int n){
+#include <stdlib.h>
+
+int * binarySearch(int* a, int q, int n){
 	if(n <= 1){
-		if(a* == q){
+		if((*a) == q){
 			return a;
 		}else{
 			return NULL;
@@ -8,12 +10,14 @@ int * main(int* a, int q, int n){
 	}
 	int* pivot = a+(n/2);
 
-	if(pivot* == q){
+	if((*pivot) == q){
 		return pivot;
-	}else if(q > pivot){
-		main(pivot, q, n/2);
+	}else if(q > (*pivot)){
+		binarySearch(pivot, q, n/2);
 	}else{
-		main(a, q, n/2);
+		binarySearch(a, q, n/2);
 	}
+
+	return NULL;
 
 }
