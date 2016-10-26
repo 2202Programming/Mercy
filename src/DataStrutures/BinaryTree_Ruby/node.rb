@@ -1,16 +1,29 @@
 #!/usr/bin/ruby -w
 
-#Node Class
-class Node
+#Wrapper Module
+module BinarySearchTree
     
-    attr_accessor :datum, :left, :right
+    #Node Class
+    class Node
     
-    #constructor Method    
-    def initialize(nDatum)
-        @datum = nDatum
-    end
+        attr_reader :datum
+        attr_accessor :left, :right
     
-    def to_s
-        @datum
+        #constructor Method    
+        def initialize(nDatum)
+            @datum = nDatum
+        end
+        
+        def insert(nDatum)
+            if nDatum <= @datum
+                @left.nil? ? @left = Node.new(nDatum) : @left.insert(nDatum)
+            elsif nDatum > @datum
+                @right.nil? ? @right = Node.new(nDatum) : @right.insert(nDatum)
+            end
+        end
+        
+        def to_s
+            @datum
+        end
     end
 end
