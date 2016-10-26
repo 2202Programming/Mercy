@@ -1,4 +1,7 @@
+#!/usr/bin/ruby -w
+
 require "./bin_tree.rb"
+require "test/unit"
 
 tree = BinarySearchTree::BinTree.new
 tree.insert(50)
