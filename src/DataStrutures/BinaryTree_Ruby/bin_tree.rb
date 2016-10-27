@@ -1,6 +1,6 @@
 #!/usr/bin/ruby -w
 
-require "./node.rb"
+require_relative "./node.rb"
 
 module BinarySearchTree
     
@@ -17,14 +17,6 @@ module BinarySearchTree
             else
                 @root.insert(datum)
             end
-        end
-        
-        def in_order(node=@root, &block)
-            return if node.nil?
-            
-            in_order(node.left, &block)
-            yield node
-            in_order(node.right, &block)
         end
         
         def in_order(node=@root, &block)
