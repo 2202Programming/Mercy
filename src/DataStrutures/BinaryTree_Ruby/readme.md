@@ -2,7 +2,15 @@
 **Language:** ruby   
 **Author:** Tom Lazar   
 **Date:** 10-26-2016   
-**Version:** v0.0.1   
+**Version:** v1.0.0
+
+    A simple binary search tree for ruby that has search functions and the default transferals for a BST. 
+
+# Module: BinarySearchTree
+
+## Class: BinTree
+
+Main class that contains 
 
 ## Class: Node
 
