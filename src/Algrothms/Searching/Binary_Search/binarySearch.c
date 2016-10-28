@@ -1,4 +1,8 @@
 #include <stdlib.h>
+#include "binarySearch.h"
+int main(){
+	return 0;
+}
 
 int * binarySearch(int* a, int q, int n){
 	if(n <= 1){

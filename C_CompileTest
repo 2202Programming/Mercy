@@ -1,0 +1,18 @@
+#!/bin/bash
+set -ex
+
+echo "Looking for Makefiles to do compile tests on"
+makenames[0] = "GNUmakefile"
+makenames[1] = "makefile"
+makenames[2] = "Makefile"
+
+
+echo "Avaible Makefile names: "
+
+for i in makenames
+do
+	echo ${makenames[i]}
+done
+
+#List of filepaths to Makefile locations
+Makefiles = find . -name 'Makefile'
