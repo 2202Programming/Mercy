@@ -29,14 +29,14 @@ module BinarySearchTree
         def pre_order(node=@root, &block)
             return if node.nil?
             yield node
-            in_order(node.left, &block)
-            in_order(node.right, &block)
+            pre_order(node.left, &block)
+            pre_order(node.right, &block)
         end
         
         def post_order(node=@root, &block)
             return if node.nil?
-            in_order(node.left, &block)
-            in_order(node.right, &block)
+            post_order(node.left, &block)
+            post_order(node.right, &block)
             yield node
         end
         
