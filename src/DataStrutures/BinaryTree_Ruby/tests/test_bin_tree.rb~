@@ -1,5 +1,20 @@
-require "./bin_tree.rb"
+#!/usr/bin/ruby -w
 
+require_relative "../bin_tree.rb"
+require "test/unit"
+
+class TestBinTree < Test::Unit::TestCase
+
+  def simpletest
+    tree = BinarySearchTree::BinTree.new
+    assert_equal(1, 1)
+  end
+end
+
+require 'test/unit/ui/console/testrunner'
+Test::Unit::UI::Console::TestRunner.run(TestBinTree)
+
+=begin
 tree = BinarySearchTree::BinTree.new
 tree.insert(50)
 tree.insert(25)
@@ -26,3 +41,5 @@ puts "post_order"
 tree.post_order do |node|
   puts node.datum
 end
+
+=end
